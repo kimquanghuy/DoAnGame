@@ -1,12 +1,2 @@
-﻿  Game.cpp
-  KhongVaCham.cpp
-  main.cpp
-  PlayScene.cpp
-D:\Dow\Năm 3\Nhập môn phát triển game - SE102.L11\Mario\PlayScene.cpp(90,20): warning C4018: '<': signed/unsigned mismatch
-D:\Dow\Năm 3\Nhập môn phát triển game - SE102.L11\Mario\PlayScene.cpp(112,20): warning C4018: '<': signed/unsigned mismatch
-D:\Dow\Năm 3\Nhập môn phát triển game - SE102.L11\Mario\PlayScene.cpp(135,10): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-D:\Dow\Năm 3\Nhập môn phát triển game - SE102.L11\Mario\PlayScene.cpp(136,10): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-D:\Dow\Năm 3\Nhập môn phát triển game - SE102.L11\Mario\PlayScene.cpp(267,20): warning C4018: '<': signed/unsigned mismatch
-D:\Dow\Năm 3\Nhập môn phát triển game - SE102.L11\Mario\PlayScene.cpp(276,20): warning C4018: '<': signed/unsigned mismatch
-  Generating Code...
-  Mario.vcxproj -> D:\Dow\Năm 3\Nhập môn phát triển game - SE102.L11\Mario\Debug\Mario.exe
+﻿  main.cpp
+  Mario.vcxproj -> C:\Users\quang huy\Desktop\DoAnGame\DoAn\Mario\Debug\Mario.exe
