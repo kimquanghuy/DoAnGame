@@ -295,6 +295,9 @@ void PlaySceneKeyHandler::OnKeyDown(int KeyCode)
 	case DIK_A:
 		mario->Reset();
 		break;
+	case DIK_F:
+		mario->FireMario();
+		break;
 	}
 }
 

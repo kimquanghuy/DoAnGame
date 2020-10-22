@@ -22,10 +22,19 @@
 #define MARIO_ANI_SMALL_WALKING_LEFT 7
 #define MARIO_ANI_DIE 8
 
+#define MARIO_ANI_FIRE_IDLE_RIGHT 9
+#define MARIO_ANI_FIRE_IDLE_LEFT 10
+#define MARIO_ANI_FIRE_WALKING_RIGHT 11
+#define MARIO_ANI_FIRE_WALKING_LEFT 12
+
+
 #define MARIO_LEVEL_SMALL 1
 #define MARIO_LEVEL_BIG 2
-#define MARIO_BIG_BBOX_W 15
-#define MARIO_BIG_BBOX_H 27
+#define MARIO_LEVEL_FIREM 3
+#define MARIO_BIG_BBOX_W 14
+#define MARIO_BIG_BBOX_H 26
+#define MARIO_FIRE_BBOX_W 14
+#define MARIO_FIRE_BBOX_H 26
 #define MARIO_SMALL_BBOX_W 13
 #define MARIO_SMALL_BBOX_H 15
 
@@ -47,6 +56,7 @@ public:
 	void StartUntouchable() { untouchable = 1; untouchable_start = GetTickCount(); }
 
 	void Reset();
+	void FireMario();
 
 	virtual void GetBBox(float& left, float& top, float& right, float& bottom);
 };

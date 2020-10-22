@@ -148,6 +148,18 @@ void Mario::Render()
 				ani = MARIO_ANI_SMALL_WALKING_RIGHT;
 			else ani = MARIO_ANI_SMALL_WALKING_LEFT;
 		}
+	//fire
+		if (level == MARIO_LEVEL_FIREM)
+		{
+		if (vx == 0)
+		{
+			if (nx > 0) ani = MARIO_ANI_FIRE_IDLE_RIGHT;
+			else ani = MARIO_ANI_FIRE_IDLE_LEFT;
+		}
+		else if (vx > 0)
+			ani = MARIO_ANI_FIRE_WALKING_RIGHT;
+		else ani = MARIO_ANI_FIRE_WALKING_LEFT;
+		}
 
 	int alpha = 255;
 	if (untouchable) alpha = 128;
@@ -194,7 +206,12 @@ void Mario::GetBBox(float& left, float& top, float& right, float& bottom)
 		right = x + MARIO_BIG_BBOX_W;
 		bottom = y + MARIO_BIG_BBOX_H;
 	}
-	else
+	else if (level == MARIO_LEVEL_FIREM)
+	{
+		right = x + MARIO_FIRE_BBOX_W;
+		bottom = y + MARIO_FIRE_BBOX_H;
+	}
+	else if (level == MARIO_LEVEL_SMALL)
 	{
 		right = x + MARIO_SMALL_BBOX_W;
 		bottom = y + MARIO_SMALL_BBOX_H;
@@ -209,6 +226,13 @@ void Mario::Reset()
 	SetState(MARIO_STATE_IDLE);
 	SetLevel(MARIO_LEVEL_BIG);
 	SetPosition(start_x, start_y);
+	SetSpeed(0, 0);
+}
+//Fire Mario
+void Mario::FireMario()
+{
+	SetState(MARIO_STATE_IDLE);
+	SetLevel(MARIO_LEVEL_FIREM);
 	SetSpeed(0, 0);
 }
 
