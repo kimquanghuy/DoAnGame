@@ -1,0 +1,6 @@
+D:\Dow\Năm 3\Nhập môn phát triển game - SE102.L11\Mario\Debug\Mario.exe
+D:\Dow\Năm 3\Nhập môn phát triển game - SE102.L11\Mario\Debug\Mario.pdb
+C:\Users\quang huy\Desktop\DoAnGame\DoAn\Mario\Debug\Mario.exe
+C:\Users\quang huy\Desktop\DoAnGame\DoAn\Mario\Debug\Mario.pdb
+C:\Users\quang huy\Desktop\DoAnGame\Mario\Debug\Mario.exe
+C:\Users\quang huy\Desktop\DoAnGame\Mario\Debug\Mario.pdb
